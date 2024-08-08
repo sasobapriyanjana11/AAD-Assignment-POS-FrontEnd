@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #04380f;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header .sectionName {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1vw;
+}
+
+header ul li {
+    background-color: #ffffff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: 1px solid #014e1b;
+    transition: 0.1s ease-in;
+}
+
+header ul li:hover {
+    transform: scale(1.1);
+    font-weight: 400;
+    background-color: #09998d;
+}
+
+header ul li a {
+    color: #0a2c01;
+    transition: 0.1s ease-in;
+}
+
+header ul li a:hover {
+    color: #ffffff;
+}
+
+/* burger button */
+
+.burger-menu {
+    display: none; /* Initially hide on larger screens */
+
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Rotate animation when clicked */
+.change .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+/* Sections */
+section > div {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    font-size: 18px;
+    padding: 1vw;
+}
+
+section > :first-child > div {
+    margin-top: 12vh;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 34px;
+}
+
+form div input, select {
+    padding: 10px;
+    border: 1px solid rgb(194, 238, 234);
+    background-color: rgb(192, 241, 217);
+    border-radius: 5px;
+}
+
+.buttons {
+    flex-direction: row;
+    font-size: 18px !important;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 13px 19px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons > :first-child {
+    background-color: #033058;
+    color: white;
+}
+
+.buttons > :nth-child(2) {
+    background-color: #df1321;
+}
+
+.buttons > :nth-child(3) {
+    background-color: #0aa82c;
+}
+
+.buttons > :nth-child(4) {
+    background-color: #0e9db6;
+}
+
+.buttons > :last-child {
+    background-color: #7e8d8c;
+}
+
+#CustomerManage table, #ItemManage table {
+    margin-left: 50px;
+    margin-top: 3rem;
+}
+
+#CustomerManage th, #CustomerManage td, #ItemManage th, #ItemManage td {
+    border: 1px solid #c4c4c4;
+    width: 20vw;
+    height: 4vw;
+    text-align: center;
+}
+
+#CustomerManage th, #ItemManage th {
+    background-color: #26772a;
+    color: white;
+}
+
+section {
+    display: none;
+}
+
+.includeDetails {
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+#OrderManage > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#OrderManage > #orderDetail {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#OrderManage > :first-child > div {
+    margin-top: 12vh;
+}
+
+#OrderManage h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #24A746;
+    padding: 10px 20px;
+    margin-bottom: 3rem;
+}
+
+#OrderManage .includeDetails form div > div, #OrderManage .includeDetails form > :last-child {
+    margin-top: 0;
+    margin: 10px 15px;
+}
+
+#OrderManage .includeDetails form > :first-child {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#OrderManage .ItemSelect form > :first-child {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#OrderManage .ItemSelect form div > div, #OrderManage .ItemSelect form > :last-child {
+    margin-top: 0;
+    margin: 10px 15px;
+}
+
+#OrderManage .ItemSelect form > :nth-child(2) {
+    display: grid;
+    grid-template-columns: 40% 39% 20%;
+    margin: 0;
+}
+
+.ItemSelect > :last-child {
+    display: flex;
+    justify-content: end;
+}
+
+.ItemSelect button {
+    padding: 10px 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #f7020a;
+    color: white;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition: 0.2s ease-in;
+}
+
+.ItemSelect button:hover {
+    background-color: #db02d0;
+}
+
+.ItemSelect {
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+#OrderManage .TotalCal h1, .TotalCal h2 {
+    background-color: transparent;
+    padding: 0;
+    font-size: 30px;
+    color: #00ad1d;
+    font-weight: 400;
+}
+
+.TotalCal {
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+.TotalCal h2 {
+    color: #ee0a11;
+}
+
+.TotalCal form > :first-child {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.TotalCal > :last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.TotalCal button {
+    padding: 10px 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #09998d;
+    color: #110202;
+    margin-top: 50px;
+    transition: 0.5s ease-in;
+}
+
+.TotalCal button:hover {
+    background-color: #014e1b;
+    color: #fcfbfb;
+    transform: scale(1.1);
+}
+
+.tableRow {
+    height: auto;
+}
+
+.table > div, .tableRows > div {
+    display: flex;
+}
+
+.table, .tableRows {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5.7vw;
+}
+
+.table > div > div, .tableRows > div > div {
+    width: 18vw;
+    height: 4vw;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableRows > div > div {
+    width: 20vw;
+}
+
+#OrderManage > :last-child {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 34vh;
+}
+
+h5 {
+    font-size: 15px;
+    color: #ff0808;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 7.8vh;
+}
+
+/* carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+#homePage > div {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+
+
+/* Responsive  */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+        display: none;
+        gap: 10px;
+    }
+
+    header ul li {
+        font-size: 0.7rem;
+        padding: 8px 15px;
+    }
+
+
+    section > div {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+
+
+    #CustomerManage table,
+    #ItemManage table {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 3rem;
+        overflow-x: auto;
+    }
+
+    #OrderManage table {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 3rem;
+        overflow-x: auto;
+    }
+
+    #CustomerManage th,
+    #CustomerManage td,
+    #ItemManage th,
+    #ItemManage td,
+    #OrderManage th,
+    #OrderManage td {
+        min-width: auto;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .carousel-control.prev {
+        left: 5px;
+    }
+
+    .carousel-control.next {
+        right: 5px;
+    }
+
+    #homePage > div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-control.prev,
+        .carousel-control.next {
+            font-size: 1.5em;
+            padding: 5px;
+        }
+
+        .carousel-inner {
+            gap: 0.5rem;
+        }
+
+        .table > div > div,
+        .tableRows > div > div {
+            width: auto;
+            padding: 5px;
+        }
+
+        #CustomerManage table,
+        #ItemManage table,
+        #OrderManage table {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .burger-menu {
+            display: block;
+        }
+}
