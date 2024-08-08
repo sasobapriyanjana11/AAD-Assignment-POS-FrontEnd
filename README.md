@@ -1,5 +1,5 @@
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=50&pause=1000&center=true&vCenter=true&color=green&width=835&height=70&lines=POS+SYSTEM+FRANTEND" alt="pos" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=50&pause=1000&center=true&vCenter=true&color=green&width=835&height=70&lines=POS+SYSTEM+FRONTEND" alt="pos" /></a>
 # POS System Frontend
 ## Table of Contents
 - [Introduction](#introduction)
@@ -46,7 +46,7 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/sasobapriyanjana11/AAD-Assignment-POS-FrontEnd.git
    
-🎗️𝗧𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝘆 𝘀𝘁𝗮𝗰𝗸 ☑️HTML ☑️CSS ☑️JS ☑️Bootstrap
+🎗️𝗧𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝘆 𝘀𝘁𝗮𝗰𝗸 ☑️HTML ☑️CSS ☑️JS 
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
